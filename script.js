@@ -50,7 +50,7 @@ const afficherTaches = async () => {
     texteHTMLAj.innerHTML ="" //vide le html
     tacheHTML.innerHTML += //affiche le html
     `
-    <div class="flex-col border border-[#008F11] px-8 py-4 rounded-xl text-[#008F11] text-xl m-2">
+    <div class="flex-col border border-[#9BB370] px-8 py-4 rounded-xl text-[#9BB370] text-xl m-2">
       <p class="mb-8">Tâche à faire :</p>
       <p>${taches.nom}</p>
     </div>
@@ -69,7 +69,7 @@ const ajouterTache = async (nom) => {
       texteHTMLAj.innerHTML += //affiche le hmtl
       `
       <div class="justify-center">
-        <p class="text-[#008F11] text-xl">La tâche existe déjà !</p>
+        <p class="text-[#9BB370] text-xl">La tâche existe déjà !</p>
       </div>
       `;
       return;
@@ -81,7 +81,7 @@ const ajouterTache = async (nom) => {
     texteHTMLAj.innerHTML += //affiche le hmtl
     `
     <div class="justify-center">
-      <p class="text-[#008F11] text-xl">Tâche ajoutée avec succès !</p>
+      <p class="text-[#9BB370] text-xl">Tâche ajoutée avec succès !</p>
     </div>
     `;
     await createDocument("TODOLIST", nouvelleTache); //ajouter la tâche à Firebase
@@ -90,7 +90,7 @@ const ajouterTache = async (nom) => {
       texteHTMLAj.innerHTML += //affiche le hmtl
       `
       <div class="justify-center">
-        <p class="text-[#008F11] text-xl">Une erreur est survenue lors de l'ajout de la tâche !</p>
+        <p class="text-[#9BB370] text-xl">Une erreur est survenue lors de l'ajout de la tâche !</p>
       </div>
       `;
   }
@@ -107,7 +107,7 @@ const supprimerTache = async (nom) => {
       texteHTMLSup.innerHTML += //affiche le hmtl
       `
       <div class="justify-center">
-        <p class="text-[#008F11] text-xl">La tâche n'existe pas !</p>
+        <p class="text-[#9BB370] text-xl">La tâche n'existe pas !</p>
       </div>
       `;
       return;
@@ -120,7 +120,7 @@ const supprimerTache = async (nom) => {
       texteHTMLSup.innerHTML += //affiche le hmtl
       `
       <div class="justify-center">
-        <p class="text-[#008F11] text-xl">La tâche n'est pas bien écrite !</p>
+        <p class="text-[#9BB370] text-xl">La tâche n'est pas bien écrite !</p>
       </div>
       `;
       return;
@@ -133,7 +133,7 @@ const supprimerTache = async (nom) => {
     texteHTMLSup.innerHTML += //affiche le hmtl
     `
     <div class="justify-center">
-      <p class="text-[#008F11] text-xl">La tâche a été supprimé avec succès !</p>
+      <p class="text-[#9BB370] text-xl">La tâche a été supprimé avec succès !</p>
     </div>
     `;
   } catch (error) {
@@ -141,7 +141,7 @@ const supprimerTache = async (nom) => {
     texteHTMLSup.innerHTML += //affiche le hmtl
     `
     <div class="justify-center">
-      <p class="text-[#008F11] text-xl">Une erreur est survenue lors de la suppression de la tâche !</p>
+      <p class="text-[#9BB370] text-xl">Une erreur est survenue lors de la suppression de la tâche !</p>
     </div>
     `;
   }
@@ -159,7 +159,7 @@ const faireGagner = async () => {
       `
       <div class="flex justify-center">
         <div>
-          <p class="text-[#008F11] text-xl">Tâche à faire : ${tacheAAfficher.nom} !</p> 
+          <p class="text-[#9BB370] text-xl">Tâche à faire : ${tacheAAfficher.nom} !</p> 
         </div>
       </div>
       `;
@@ -168,7 +168,7 @@ const faireGagner = async () => {
     gagnantHTML.innerHTML += 
     `
     <div class="justify-center">
-      <p class="text-[#008F11] text-xl">Un problème est survenu !</p>
+      <p class="text-[#9BB370] text-xl">Un problème est survenu !</p>
     </div>
     `;
   }
